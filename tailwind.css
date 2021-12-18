@@ -451,26 +451,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .select-pic {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  border-radius: 1.5rem;
-  background-image: url(img/saul.png);
+  border-radius: 0.375rem;
   background-size: cover;
   padding: 4rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   opacity: 0.5;
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  --tw-shadow-color: #111827;
-  --tw-shadow: var(--tw-shadow-colored);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
-}
-
-.select-pic:hover {
-  opacity: 1;
-  --tw-blur: blur(0);
-  filter: var(--tw-filter);
 }
 
 @media (min-width: 640px) {
@@ -486,14 +475,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-blur: blur(4px);
     filter: var(--tw-filter);
   }
-
-  .select-pic:hover {
-    height: 20rem;
-  }
-
-  .select-pic:hover {
-    width: 20rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -504,7 +485,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   .select-pic {
     width: 30rem;
   }
+}
 
+.select-pic:hover {
+  opacity: 1;
+  --tw-shadow: 0 35px 60px -5px rgba(0,0,0,0.6);
+  --tw-shadow-colored: 0 35px 60px -5px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-blur: blur(0);
+  filter: var(--tw-filter);
+}
+
+@media (min-width: 640px) {
+  .select-pic:hover {
+    height: 20rem;
+  }
+
+  .select-pic:hover {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
   .select-pic:hover {
     height: 36rem;
   }
@@ -530,46 +532,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
-.-mx-9 {
-  margin-left: -2.25rem;
-  margin-right: -2.25rem;
-}
-
-.mx-9 {
-  margin-left: 2.25rem;
-  margin-right: 2.25rem;
-}
-
-.mx-14 {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
-}
-
-.mx-28 {
-  margin-left: 7rem;
-  margin-right: 7rem;
-}
-
 .mx-24 {
   margin-left: 6rem;
   margin-right: 6rem;
-}
-
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.-mt-10 {
-  margin-top: -2.5rem;
-}
-
-.-mt-2 {
-  margin-top: -0.5rem;
-}
-
-.-mt-4 {
-  margin-top: -1rem;
 }
 
 .-mt-0 {
@@ -584,52 +549,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
-.h-3 {
-  height: 0.75rem;
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-14 {
   height: 3.5rem;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.w-3 {
-  width: 0.75rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-14 {
   width: 3.5rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .rotate-45 {
@@ -699,13 +632,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(img\/saul\.png\)\] {
+  background-image: url(img/saul.png);
+}
+
+.bg-\[url\(img\/walter\.jpg\)\] {
+  background-image: url(img/walter.jpg);
 }
 
 .p-10 {
@@ -754,14 +695,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-100 {
-  opacity: 1;
-}
-
-.opacity-50 {
-  opacity: 0.5;
-}
-
 .opacity-0 {
   opacity: 0;
 }
@@ -800,15 +733,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 1;
 }
 
-.hover\:blur-0:hover {
-  --tw-blur: blur(0);
-  filter: var(--tw-filter);
-}
-
-.group:hover .group-hover\:flex {
-  display: flex;
-}
-
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
@@ -816,12 +740,5 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media print {
   .print\:hidden {
     display: none;
-  }
-}
-
-@media (min-width: 640px) {
-  .sm\:blur-sm {
-    --tw-blur: blur(4px);
-    filter: var(--tw-filter);
   }
 }
