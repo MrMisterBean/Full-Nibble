@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .select-pic {
+    @apply bg-cover  bg-[url(img/saul.png)]
+     text-white shadow-2xl shadow-gray-900
+     p-16 my-16
+     transition-all duration-500
+     lg:h-[30rem] lg:w-[30rem]
+     hover:lg:h-[36rem] hover:lg:w-[36rem]
+     sm:h-[16rem] sm:w-[16rem]
+     hover:sm:h-[20rem] hover:sm:w-[20rem]
+     sm:blur-sm hover:blur-0
+     opacity-50 hover:opacity-100
+     rounded-3xl;
+  }
+}
