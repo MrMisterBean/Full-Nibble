@@ -10,12 +10,28 @@
 <body>
   <div class="flex-col font-serif font-semibold">
     <div class="flex justify-around  text-5xl text-center py-16">
-      <a href="./charlie.html" class="select-pic"></a>
-      <a href="./paddy.html" class="select-pic"></a>
-    </div>
-    <div class="print:hidden text-black-500 hover:opacity-100 opacity-0 p-10 inline-block fixed bottom-0">
+      <!--Start of the left image-->
+      <div class="flex flex-col items-center group">
+        <a href="./charlie.html" class="select-pic "></a>
+		    <div class="tooltip absolute top-10 flex-col items-center transition-all duration-[250ms] opacity-0 group-hover:opacity-100 animate-bounce ">
+			    <span class="tooltip  rounded-3xl text-white bg-black text-3xl py-4 px-12 ">Charlie</span>
+			   <div class="w-6 h-6 mx-24 -mt-0 rotate-45 bg-black"></div>  
+		    </div>
+	    </div>
+      <!--End of the left image-->
+      <!--Start of the right image-->
+       <div class="flex flex-col items-center group">
+        <a href="./paddy.html" class="select-pic "></a>
+		    <div class="tooltip absolute top-10 flex-col items-center transition-all duration-[250ms] opacity-0 group-hover:opacity-100 animate-bounce ">
+			    <span class="tooltip  rounded-3xl text-white bg-black text-3xl py-4 px-12 ">Paddy</span>
+			   <div class="w-6 h-6 mx-24 -mt-0 rotate-45 bg-black"></div>  
+		    </div>
+	    </div>			  		
+	</div>
+      <!--End of the right image-->
+    <!-- this is the little man <div class="print:hidden text-black-500 hover:opacity-100 opacity-0 p-10 inline-block fixed bottom-0">
       <p class="w-14 h-14 selection:bg-green-500 animate-spin">:)</p>
-    </div>
+    </div> -->
   </div>
 </body>
 </html>
